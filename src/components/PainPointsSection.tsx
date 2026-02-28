@@ -7,23 +7,23 @@ const painPoints = [
 
 export default function PainPointsSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-[40px] px-[64px] py-[80px]">
+    <section className="flex w-full flex-col items-center gap-[40px] px-6 md:px-16 py-[80px]">
       {/* Header */}
       <div className="flex flex-col items-center gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           PAIN POINTS
         </span>
-        <h2 className="text-center text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
+        <h2 className="text-center text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
           你是不是每天都在...
         </h2>
       </div>
 
       {/* Cards grid */}
-      <div className="grid w-full grid-cols-4 gap-[24px]">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[24px]">
         {painPoints.map((p) => (
           <div
             key={p.title}
-            className="flex flex-col gap-[16px] rounded-[20px] border border-[var(--border-light)] bg-[var(--white)] p-[32px]"
+            className="flex flex-col gap-[16px] rounded-[20px] border border-[var(--border-light)] bg-[var(--white)] p-6 md:p-8"
           >
             <span className="text-[32px]">{p.emoji}</span>
             <span className="text-[18px] font-semibold text-[var(--bg-dark)]">{p.title}</span>
@@ -33,8 +33,8 @@ export default function PainPointsSection() {
       </div>
 
       {/* Banner */}
-      <div className="flex w-full flex-col items-center gap-[12px] rounded-[20px] bg-[var(--bg-dark)] px-[64px] py-[48px]">
-        <span className="text-center text-[24px] font-semibold text-[#F5F0ED]">
+      <div className="flex w-full flex-col items-center gap-[12px] rounded-[20px] bg-[var(--bg-dark)] px-6 md:px-16 py-[48px]">
+        <span className="text-center text-[20px] md:text-[24px] font-semibold text-[#F5F0ED]">
           這些問題，BeautyBook 幫你全部解決。
         </span>
         <span className="text-center text-[16px] text-[#8A8480]">

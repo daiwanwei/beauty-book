@@ -66,7 +66,7 @@ function FeatureCardComponent({ icon, title, description, variant }: FeatureCard
 
   return (
     <div
-      className={`flex w-[300px] shrink-0 flex-col gap-[20px] rounded-[20px] p-[32px] h-[260px] ${
+      className={`flex w-[260px] md:w-[300px] shrink-0 flex-col gap-[20px] rounded-[20px] p-[32px] h-[260px] ${
         isDark
           ? "bg-[var(--bg-dark)]"
           : "bg-[var(--white)] border border-[var(--border-light)]"
@@ -115,13 +115,13 @@ export default function FeaturesSection() {
   }, []);
 
   return (
-    <section className="flex w-full flex-col gap-[40px] overflow-hidden py-[80px] pl-[64px]">
+    <section className="flex w-full flex-col gap-[40px] overflow-hidden py-[80px] pl-6 md:pl-16">
       {/* Header */}
       <div className="flex flex-col gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           FEATURES
         </span>
-        <h2 className="text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
+        <h2 className="text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
           省時、防爽約、帳清楚
         </h2>
         <p className="text-[14px] text-[var(--text-muted)]">

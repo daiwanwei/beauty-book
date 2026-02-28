@@ -7,10 +7,10 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="flex w-full items-center justify-around border-t border-[#333333] bg-[var(--bg-dark)] px-[64px] py-[48px]">
+    <section className="grid w-full grid-cols-2 md:grid-cols-4 gap-6 border-t border-[#333333] bg-[var(--bg-dark)] px-6 md:px-16 py-8 md:py-12">
       {stats.map((stat) => (
         <div key={stat.label} className="flex flex-col items-center gap-[4px]">
-          <span className="text-[36px] font-extrabold tracking-[-1px] text-[#F5F0ED]">
+          <span className="text-[28px] md:text-[36px] font-extrabold tracking-[-1px] text-[#F5F0ED]">
             {stat.value}
           </span>
           <span className="text-[14px] text-[#8A8480]">{stat.label}</span>

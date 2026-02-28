@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col gap-[40px] bg-[var(--bg-dark)] px-[64px] py-[48px]">
+    <footer className="flex w-full flex-col gap-[40px] bg-[var(--bg-dark)] px-6 md:px-16 py-[48px]">
       {/* Top */}
-      <div className="flex w-full items-start justify-between">
+      <div className="flex w-full flex-col md:flex-row items-start justify-between gap-8">
         <div className="flex flex-col gap-[12px]">
           <span className="text-[22px] font-bold tracking-[-0.5px] text-[var(--white)]">
             BeautyBook
@@ -11,7 +11,7 @@ export default function Footer() {
             AI 預約 × 記帳系統，專為美業打造
           </span>
         </div>
-        <div className="flex gap-[64px]">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <div className="flex flex-col gap-[12px]">
             <span className="text-[12px] font-semibold tracking-[1.5px] text-[#999999]">
               產品
@@ -44,7 +44,7 @@ export default function Footer() {
       <div className="h-[1px] w-full bg-[#333333]" />
 
       {/* Bottom */}
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full flex-col md:flex-row items-center justify-between gap-4">
         <span className="text-[13px] text-[#555555]">
           © 2026 BeautyBook. All rights reserved.
         </span>

@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-[64px] pb-[80px] pt-[120px]">
+    <section className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-6 md:px-16 pb-16 md:pb-[80px] pt-20 md:pt-[120px]">
       <div className="flex w-full flex-col items-center gap-[32px]">
         {/* Badge */}
         <div className="flex items-center gap-[8px] rounded-full bg-[#C17F6B18] px-[16px] py-[8px]">
@@ -11,23 +11,17 @@ export default function HeroSection() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-center text-[64px] font-extrabold leading-[1.1] tracking-[-2px] text-[#F5F0ED]">
-          你的 LINE，從今天開始
-          <br />
-          自動接單
+        <h1 className="text-center text-[36px] md:text-[48px] lg:text-[64px] font-extrabold leading-[1.1] tracking-[-2px] text-[#F5F0ED]">
+          你的 LINE，從今天開始自動接單
         </h1>
 
         {/* Subline */}
-        <p className="text-center text-[18px] leading-[1.7] text-[#8A8480]">
-          客人在 LINE 傳訊息，AI 自動回覆、
-          <br />
-          確認預約、收訂金、發提醒、記帳。
-          <br />
-          你只要準時開工就好。
+        <p className="text-center text-[16px] md:text-[18px] leading-[1.7] text-[#8A8480]">
+          客人在 LINE 傳訊息，AI 自動回覆、確認預約、收訂金、發提醒、記帳。你只要準時開工就好。
         </p>
 
         {/* CTA Row */}
-        <div className="flex items-center justify-center gap-[16px]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-[16px]">
           <a
             href="#cta"
             className="flex items-center gap-[10px] rounded-full bg-[var(--primary)] px-[36px] py-[18px]"

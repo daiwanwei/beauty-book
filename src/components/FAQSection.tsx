@@ -25,20 +25,20 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="flex w-full flex-col items-center gap-[48px] px-[64px] py-[80px]"
+      className="flex w-full flex-col items-center gap-[48px] px-6 md:px-16 py-[80px]"
     >
       {/* Header */}
       <div className="flex flex-col items-center gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           FAQ
         </span>
-        <h2 className="text-center text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
+        <h2 className="text-center text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
           常見問題
         </h2>
       </div>
 
       {/* Questions */}
-      <div className="flex w-[800px] flex-col">
+      <div className="w-full max-w-[800px] flex flex-col">
         {faqs.map((faq, i) => (
           <div
             key={faq.q}

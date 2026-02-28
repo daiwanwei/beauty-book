@@ -26,20 +26,20 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-[64px] py-[80px]"
+      className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-6 md:px-16 py-[80px]"
     >
       {/* Header */}
       <div className="flex flex-col items-center gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           TESTIMONIALS
         </span>
-        <h2 className="text-center text-[40px] font-bold tracking-[-1px] text-[#F5F0ED]">
+        <h2 className="text-center text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[#F5F0ED]">
           商家真實見證
         </h2>
       </div>
 
       {/* Cards */}
-      <div className="grid w-full grid-cols-3 gap-[24px]">
+      <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-[24px]">
         {testimonials.map((t) => (
           <div
             key={t.name}

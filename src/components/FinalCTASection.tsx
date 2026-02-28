@@ -2,15 +2,13 @@ export default function FinalCTASection() {
   return (
     <section
       id="cta"
-      className="flex w-full flex-col items-center gap-[32px] bg-[var(--primary)] px-[64px] py-[100px]"
+      className="flex w-full flex-col items-center gap-[32px] bg-[var(--primary)] px-6 md:px-16 py-16 md:py-[100px]"
     >
-      <h2 className="text-center text-[48px] font-bold tracking-[-1px] text-[var(--white)]">
+      <h2 className="text-center text-[28px] md:text-[36px] lg:text-[48px] font-bold tracking-[-1px] text-[var(--white)]">
         準備好讓預約自動化了嗎？
       </h2>
-      <p className="text-center text-[18px] leading-[1.6] text-[#FFFFFFCC]">
-        14 天免費試用，不需綁卡。
-        <br />
-        3 分鐘上線，立刻開始省時間。
+      <p className="text-center text-[16px] md:text-[18px] leading-[1.6] text-[#FFFFFFCC]">
+        14 天免費試用，不需綁卡。3 分鐘上線，立刻開始省時間。
       </p>
       <a
         href="#"

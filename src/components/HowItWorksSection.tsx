@@ -21,13 +21,13 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-[64px] py-[80px]">
+    <section className="flex w-full flex-col items-center gap-[48px] bg-[var(--bg-dark)] px-6 md:px-16 py-[80px]">
       {/* Header */}
       <div className="flex flex-col items-center gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           HOW IT WORKS
         </span>
-        <h2 className="text-center text-[40px] font-bold tracking-[-1px] text-[#F5F0ED]">
+        <h2 className="text-center text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[#F5F0ED]">
           3 步驟上線，你的 LINE 開始自動工作
         </h2>
         <p className="text-center text-[16px] text-[#8A8480]">
@@ -36,7 +36,7 @@ export default function HowItWorksSection() {
       </div>
 
       {/* Steps */}
-      <div className="grid w-full grid-cols-3 gap-[32px]">
+      <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-[32px]">
         {steps.map((step) => (
           <div
             key={step.num}

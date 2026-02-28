@@ -23,13 +23,13 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="flex w-full flex-col items-center gap-[48px] px-[64px] py-[80px]">
+    <section className="flex w-full flex-col items-center gap-[48px] px-6 md:px-16 py-[80px]">
       {/* Header */}
       <div className="flex flex-col items-center gap-[12px]">
         <span className="text-[12px] font-semibold tracking-[2px] text-[var(--primary)]">
           SERVICES
         </span>
-        <h2 className="text-center text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
+        <h2 className="text-center text-[28px] md:text-[40px] font-bold tracking-[-1px] text-[var(--bg-dark)]">
           一套系統，四種服務都能管
         </h2>
         <p className="text-center text-[16px] text-[var(--text-muted)]">
@@ -38,7 +38,7 @@ export default function ServicesSection() {
       </div>
 
       {/* Cards */}
-      <div className="grid w-full grid-cols-4 gap-[24px]">
+      <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px]">
         {services.map((svc) => (
           <div
             key={svc.title}
